@@ -39,8 +39,6 @@ class Login {
       return false;
     let user = this.getUser(username);
     user.pass = newPassword;
-    this.removeUser(username);
-    this.registerUser(user);
   }
 
   login(username, password) {
